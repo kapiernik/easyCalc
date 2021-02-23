@@ -1,1 +1,22 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.header {
+  margin: 20px 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header .header__logo img {
+  width: 250px;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
