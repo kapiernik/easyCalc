@@ -1,0 +1,11 @@
+.header {
+  margin: 20px 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header .header__logo img {
+  width: 250px;
+  height: auto;
+}
+/*# sourceMappingURL=header.css.map */
