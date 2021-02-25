@@ -6,17 +6,78 @@
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .header {
+  height: 5vh;
   margin: 20px 20px;
   margin-bottom: 0;
   border-bottom: 1px solid #eee;
 }
 
 .header .header__logo img {
-  width: 250px;
-  height: auto;
+  width: auto;
+  height: 1rem;
+}
+
+.main__inner {
+  height: 91vh;
+  overflow: hidden;
+}
+
+.main__inner .main__input {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__inner .main__input input {
+  width: 100vw;
+  height: 300px;
+  border: none;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.main__inner .main__input input:focus {
+  outline: none;
+}
+
+.main__inner .main__input input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.main__inner .main__input input::-webkit-outer-spin-button, .main__inner .main__input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main__inner .main__buttons {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__inner .main__buttons button {
+  width: 10%;
+  height: 30%;
 }
 /*# sourceMappingURL=style.css.map */
