@@ -9,16 +9,47 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.header {
-  height: 5vh;
-  margin: 20px 20px;
-  margin-bottom: 0;
-  border-bottom: 1px solid #eee;
+.main__inner .main__input input, .main__inner .main__input .main__result {
+  width: 100vw;
+  height: 300px;
+  border: none;
+  text-align: center;
+  font-size: 4rem;
 }
 
-.header .header__logo img {
-  width: auto;
-  height: 1rem;
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main__inner .main__input input, .main__inner .main__input .main__result {
+  width: 100vw;
+  height: 300px;
+  border: none;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
 }
 
 .main__inner {
@@ -44,11 +75,7 @@ body {
 }
 
 .main__inner .main__input input {
-  width: 100vw;
-  height: 300px;
-  border: none;
-  text-align: center;
-  font-size: 4rem;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .main__inner .main__input input:focus {
@@ -62,6 +89,18 @@ body {
 .main__inner .main__input input::-webkit-outer-spin-button, .main__inner .main__input input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.main__inner .main__input .main__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main__inner .main__buttons {
@@ -79,5 +118,17 @@ body {
 .main__inner .main__buttons button {
   width: 10%;
   height: 30%;
+}
+
+.header {
+  height: 5vh;
+  margin: 20px 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header .header__logo img {
+  width: auto;
+  height: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
