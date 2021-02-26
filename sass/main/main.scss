@@ -1,0 +1,50 @@
+@import '../variables/variables.scss';
+
+.main{
+    &__inner{
+        height: 91vh;
+        overflow: hidden;
+        //СЕЙЧАС БУДЕТ ИНПУТ
+        .main__input{
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            input{
+                @extend %main__output;
+                font-family: $text-family;
+                &:focus{
+                    outline: none;
+                    &::-webkit-input-placeholder{
+                        color: transparent;
+                    }
+                }
+                //УБИРАЕМ МЕШАЮЩИЕ СТРЕЛКИ, КОТОРЫЕ ПОЯВЛЯЮТСЯ С NUMBER INPUT
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+                }
+            }
+            //ОТОБРАЖЕНИЕ РЕЗУЛЬТАТА
+            .main__result{
+                @extend %main__output;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        //СЕЙЧАС БУДУТ КНОПКИ: +, - И Т.Д.
+        .main__buttons{
+            height: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            button{
+                width: 10%;
+                height: 30%;
+            }
+        }
+    }
+}
