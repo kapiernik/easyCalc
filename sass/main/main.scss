@@ -35,13 +35,16 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            @media screen and (max-width: 550px) {
+                display: none;
+            }
             button{
                 width: 10%;
                 height: 30%;
                 background-color: #fff;
                 color: #000;
                 border-radius: 10px;
-                border: 4px solid #000;
+                border: 3px solid #000;
                 font-weight: 700;
                 font-size: 1.5rem;
                 transition: all 0.5s;
