@@ -1,12 +1,14 @@
 .header{
-    height: 5vh;
-    margin: 20px 20px;
+    height: 7vh;
+    margin: 10px 20px;
     margin-bottom: 0;
     border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
     .header__logo{
         img{
             width: auto;
-            height: 1rem;
+            height: 2rem;
         }
     }
 }
