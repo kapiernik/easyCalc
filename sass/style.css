@@ -53,7 +53,7 @@ body {
 }
 
 .main__inner {
-  height: 91vh;
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -86,11 +86,6 @@ body {
   color: transparent;
 }
 
-.main__inner .main__input input::-webkit-outer-spin-button, .main__inner .main__input input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .main__inner .main__input .main__result {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,17 +113,36 @@ body {
 .main__inner .main__buttons button {
   width: 10%;
   height: 30%;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  border: 4px solid #000;
+  font-weight: 700;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main__inner .main__buttons button:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .header {
-  height: 5vh;
-  margin: 20px 20px;
+  height: 7vh;
+  margin: 10px 20px;
   margin-bottom: 0;
   border-bottom: 1px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .header__logo img {
   width: auto;
-  height: 1rem;
+  height: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
