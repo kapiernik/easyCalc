@@ -2,7 +2,7 @@
 
 .main{
     &__inner{
-        height: 91vh;
+        height: 90vh;
         overflow: hidden;
         //СЕЙЧАС БУДЕТ ИНПУТ
         .main__input{
@@ -19,12 +19,6 @@
                     &::-webkit-input-placeholder{
                         color: transparent;
                     }
-                }
-                //УБИРАЕМ МЕШАЮЩИЕ СТРЕЛКИ, КОТОРЫЕ ПОЯВЛЯЮТСЯ С NUMBER INPUT
-                &::-webkit-outer-spin-button,
-                &::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
                 }
             }
             //ОТОБРАЖЕНИЕ РЕЗУЛЬТАТА
@@ -44,6 +38,17 @@
             button{
                 width: 10%;
                 height: 30%;
+                background-color: #fff;
+                color: #000;
+                border-radius: 10px;
+                border: 4px solid #000;
+                font-weight: 700;
+                font-size: 1.5rem;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: #000;
+                    color: #fff;
+                }
             }
         }
     }
