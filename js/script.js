@@ -22,13 +22,15 @@ let resultAction = function(){
     } else{
     result = `${result} ${input.value}`; // СОЗДАЕМ СТРОКУ ДЛЯ МАТН.ДЖС
     }
-    console.log(result);
     resultContainer.classList.add('main__result');
     inputContainer.append(resultContainer); // ВНЕДРЯЕМ КОНТЕЙНЕР ДЛЯ РЕЗУЛЬТАТА
     /* jshint ignore:start */
     try{
         resultContainer.textContent = `Результат: ${math.evaluate(result)}`; //ВЫВОДИМ РЕЗУЛЬТАТ
     } catch{ //ЕСЛИ ЕСТЬ ОШИБКИ
+        resultContainer.textContent = `Произошла ошибка. Повторите попытку`;
+    }
+    if(input.value == ''){
         resultContainer.textContent = `Произошла ошибка. Повторите попытку`;
     }
     /* jshint ignore:end */
@@ -43,12 +45,13 @@ let action = function(){ // ЛЮБОЕ ДЕЙСТВИЕ: ОТНИМАНИЕ, П�
 
 document.addEventListener('keydown', e => {
     //ОЧИСТКА РЕЗУЛЬТАТА
-    if(e.code === 'Escape' || (e.code === 'Enter' && inputContainer.contains(resultContainer))){
+    if(e.code === 'Escape' || (e.code === 'Enter' && inputContainer.contains(resultContainer)) || +
+    (e.key === 'Backspace' && inputContainer.contains(resultContainer))){
         resultContainer.remove();
         input.value = '';
         input.hidden = false; // ВОЗВРАЩАЕМ ИНПУТ
         result = ''; 
-    } else if(e.key === '+' || e.key === '-' || e.key === '*' || e.key === '/'){ 
+    } else if(input.value === '+' || input.value === '-' || input.value === '*' || input.value === '/'){ 
         action();
         //ЕСЛИ НА КЛАВЕ БЫЛА НАЖАТА НУЖНАЯ КНОПКА
     } else if(e.key === '=' || (e.code === 'Enter' && !inputContainer.contains(resultContainer))){
